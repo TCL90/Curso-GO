@@ -26,12 +26,19 @@ func enviar(p, i, s chan<- int) {
 		}
 	}
 
-	close(p)
-	close(i)
-
 	s <- 0
 }
 
 func recibir(p, i, s <-chan int) {
-
+	for {
+		select {
+		case v := <-p:
+			fmt.Println("Desde el canal par", v)
+		case v := <-i:
+			fmt.Println("Desde el canal impar", v)
+		case v := <-s:
+			fmt.Println("Desde el canal salir", v)
+			return
+		}
+	}
 }
