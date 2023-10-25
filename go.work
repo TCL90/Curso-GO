@@ -2,4 +2,6 @@ go 1.21.2
 
 use (
     ./src/testing
+    ./src/Ejercicio12-1/perro
+    ./src/12-testing
 )
