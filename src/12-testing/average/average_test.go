@@ -17,7 +17,7 @@ var testMedias = []pairSet{
 
 func TestMedia(t *testing.T) {
 	for _, v := range testMedias {
-		got := media(v.values...)
+		got := Media(v.values...)
 		if got != v.resultado {
 			t.Errorf("Expected %f, Got %f from Average of %v", v.resultado, got, v.values)
 		}

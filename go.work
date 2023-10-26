@@ -3,5 +3,13 @@ go 1.21.2
 use (
     ./src/testing
     ./src/Ejercicio12-1/perro
-    ./src/12-testing
+    ./src/12-testing/average
+    ./src/12-benchmark/mate
+    ./src/12-benchmark2/01/decir
+    ./src/12-benchmark2/02/mystring
+    ./src/12-benchmark2/03/mystring2
+    ./src/Ejercicio13-1/dog
+    ./src/Ejercicio13-2/quote
+    ./src/Ejercicio13-2/word
+    ./src/Ejercicio13-3/mymath
 )
